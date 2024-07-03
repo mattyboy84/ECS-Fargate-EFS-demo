@@ -460,3 +460,4 @@ Resources:
             - !Ref subnetB
             - !Ref subnetC
       EnableExecuteCommand: true
+
