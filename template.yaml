@@ -364,7 +364,6 @@ Resources:
         Namespace: !Sub "${AWS::StackName}-cluster"
       CapacityProviders:
         - FARGATE
-        - FARGATE_SPOT
       ClusterSettings:
         - Name: containerInsights
           Value: enabled
