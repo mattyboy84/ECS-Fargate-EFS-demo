@@ -8,7 +8,7 @@ Parameters:
     Default: 10.35.0.0/16
   scalingGroupDesiredSize:
     Type: String
-    Default: "10"
+    Default: "1"
   efsMountPoint:
     Type: String
     Description: The directory that the EFS is mounted to
@@ -364,7 +364,7 @@ Resources:
         Namespace: !Sub "${AWS::StackName}-cluster"
       CapacityProviders:
         - FARGATE
-        #- FARGATE_SPOT
+        - FARGATE_SPOT
       ClusterSettings:
         - Name: containerInsights
           Value: enabled
